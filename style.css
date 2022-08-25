@@ -674,6 +674,10 @@ img{
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
+
+    .other-project-container .content{
+        background: none;
+    }
 }
 
 @media(max-width: 890px){
@@ -732,7 +736,7 @@ img{
     }
 
     .project-img{
-        /* display: none; */
+        display: none;
         position: relative;
         grid-column: 1/-1;
     }
@@ -797,6 +801,11 @@ img{
 
     .hero .lead{
         font-size: 30px;
+    }
+
+    .contact{
+        line-height: 1.5;
+        padding: 5rem 0rem;
     }
 }
 
