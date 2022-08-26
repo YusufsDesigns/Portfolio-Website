@@ -825,7 +825,7 @@ img{
 
     
     .other-project-container .content{
-        background: none;
+        background: url(/images/pic-min.png);
     }
 }
 
