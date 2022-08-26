@@ -825,7 +825,7 @@ img{
 
     
     .other-project-container .content{
-        background: url(/images/pic-min.png);
+        background: url(/images/pic-min.png) no-repeat center center/cover;
     }
 }
 
