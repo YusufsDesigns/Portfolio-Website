@@ -170,6 +170,7 @@ img{
 
 .text-center{
     text-align: center;
+    color: var(--secondary-color);
 }
 
 .head-in, .links-in{
@@ -202,14 +203,16 @@ img{
 .p-4{padding: 4rem;}
 .p-5{padding: 5rem;}
 
-/* Header */
-.header{
-    height: 100vh;
-}
-
 /* navbar */
 .navbar{
-    height: 90px;
+    height: 80px;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    background: rgba(16, 22, 47, 0.5);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 
 .navbar .container{
@@ -271,7 +274,7 @@ img{
 
 /* Hero */
 .hero{
-    height: 85%;
+    height: 90vh;
 }
 
 .hero .container{
@@ -342,7 +345,7 @@ img{
 
 /* About */
 .about{
-    padding: 5rem 0;
+    padding: 0 0 5rem 0;
 }
 
 .about .container{
@@ -364,6 +367,7 @@ img{
     line-height: 1.5;
     font-size: 18px;
     font-family: var(--text-fontfamily);
+    text-align: justify;
 }
 
 .about-content .img{
@@ -452,6 +456,7 @@ img{
 /* Projects */
 .projects .container{
     max-width: 1200px;
+    padding: 1rem;
 }
 
 .projects .sec-head{
@@ -514,6 +519,7 @@ img{
 /* Other Projects */
 .other-projects .container{
     max-width: 1200px;
+    padding: 1rem;
 }
 
 .other-projects .sec-head::before{
@@ -595,7 +601,7 @@ img{
 
 .inner-menu{
     position: absolute;
-    width: 60%;
+    width: 70%;
     height: 100%;
     background: var(--primary-color);
     right: 0;
@@ -604,15 +610,20 @@ img{
 .inner-menu .pages{
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin-top: 30px;
+    padding: 2rem;
     line-height: 4;
 }
 
 .inner-menu .pages li span{
     margin: 0 5px;
+}
+
+.inner-menu .pages .resume{
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 /* Hamburger */
@@ -673,10 +684,6 @@ img{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
-    }
-
-    .other-project-container .content{
-        background: none;
     }
 }
 
@@ -814,6 +821,11 @@ img{
         display: grid;
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    
+    .other-project-container .content{
+        background: url(/images/pic-min.png);
     }
 }
 
