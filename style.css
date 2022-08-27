@@ -671,7 +671,15 @@ img{
     transform: rotate(-45deg) translateX(-6px) translateY(6px);
 }
 
+.inspiration{
+    margin: 50px 0;
+    text-align: center;
+}
 
+.inspiration a{
+    font-size: 14px;
+    color: var(--secondary-color);
+}
 
 @media(max-width: 1290px){
     .social-icons{
