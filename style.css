@@ -615,10 +615,6 @@ img{
     line-height: 4;
 }
 
-.inner-menu .pages li span{
-    margin: 0 5px;
-}
-
 .inner-menu .pages .resume{
     line-height: 1;
     display: flex;
